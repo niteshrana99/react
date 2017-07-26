@@ -1,0 +1,5 @@
+We will add isLoading functionality in app. So at first isLoadings state will be set to false. As soon as one starts loading we will set it to true. Also we want to conditionally render message we don't always want to render it. 
+
+In our render function we will either render our loading text or tempreture, so we create a function inside for this functionality. Inside from render we are going to call this function in place of wether message and this function will return a JSX indicating what to show and what not to show. 
+
+Using sourcemap in webpack: When we run our code through webpack, it converts our code into browser readable format. We can also see our bundle.js is a huge file with a lot of code. So in order to find the right code it will be a burden to dig into source file. To fix this we are gonna use something called source-maps. SourceMaps lets you take original code so the code we actually have written, we can use it and see it while debugging. On webpack we add devtools. 
